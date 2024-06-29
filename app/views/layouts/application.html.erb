@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maharu</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <script src="https://kit.fontawesome.com/ab871488c3.js" crossorigin="anonymous"></script>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <header>
+      <h1>GeekTwitter</h1>
+      <div class="header-list">
+      <ul>
+        <li><%= link_to "ホーム", tweets_path %></li>
+        <li><%= link_to "新規投稿",new_tweet_path %></li>
+        <li><%= link_to "ログイン", tweets_path %></li>
+        <li><%= link_to "新規登録", new_user_registration_path %></li>
+        <li><%= button_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+        <li><%= link_to "診断する", new_perfume_path %></li>
+      </ul>
+      </div>
+    </header>
+    <main>
+    <%= yield %>
+    </main>
+    <footer>
+      
+    </footer>
+  </body>
+</html>

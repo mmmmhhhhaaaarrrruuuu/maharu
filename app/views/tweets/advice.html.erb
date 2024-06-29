@@ -1,0 +1,6 @@
+<h1>会話のテクニック・アドバイス</h1>
+<% @posts.each do |t| %>
+    <% if t.category == "advice" %>  #ここがポイント！ categoryカラムにcatと格納されているものだけを表示している！
+    <p>内容:<%= t.content %></p>
+    <% end %>
+  <% end %>
