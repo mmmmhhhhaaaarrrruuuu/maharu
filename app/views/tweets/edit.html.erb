@@ -1,5 +1,14 @@
-<%= form_for @tweet do |f| %>
-    <%= f.label :body %>
-    <%= f.text_field :body, :size => 140 %> 
-    <%= f.submit "編集する" %>
+<h2>投稿内容の編集</h2>
+<div class="hensyuu">
+  <%= form_for @tweet do |f| %>
+      <%= f.label :body %>
+      <%= f.text_field :body, :size => 140 %> 
+      <%= f.submit "編集する" %>
+
   <% end %>
+  
+</div>
+<div class="syasin">
+  <%= image_tag 'haikei niji.avif' %>
+</div>
+

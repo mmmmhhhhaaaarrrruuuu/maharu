@@ -1,0 +1,41 @@
+p {
+    font-size: 20px;
+  }
+
+.mattarin{
+    display: flex;
+    justify-content: center;
+    
+}
+.kai{
+     margin-right: 200px;
+}
+.kai p {
+    font-size: 30px;
+}
+.dai{
+    font-size: 20px;
+    margin-left: 20px; 
+    line-height: 120%;   
+}
+.dai h2{
+    font-size: 30px;   
+    text-align: center;
+    border-bottom: solid rgb(138, 245, 193);
+    margin: 20px;
+}
+.yuki{
+    line-height: 200%;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.container-sindan{
+    margin: 40px;
+    line-height: 200%;   
+    font-size: 30px;
+}
+.col-12 p{
+    font-size: 30px;
+}
+
+

@@ -1,24 +1,30 @@
 <h1>会話の話題</h1>
-<h3>新規Tweet</h3>
-<%= form_for @tweet do |f| %>
-  <div class="field">
+<div class="kuro">
+  <%= form_for @tweet do |f| %>
+  <div class="kuro">
+    <h2>新規Tweet</h2>
     <%= f.label :body %>
     <%= f.text_field :body, :size => 140 %>
   </div>
 
-  <div class="field">
-  <%= f.label :image %>
-  <%= f.file_field :image %>
-</div>
+  <div class="kuro">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+
+  </div>
 
   <%= f.submit "Tweetする" %>
-<% end %>
-<%= link_to "Tweet一覧に戻る", tweets_path %>
+  <% end %>
+  <%= link_to "Tweet一覧に戻る", tweets_path %>
 
-<%= form_for @tweet do |f| %>
+  <%= form_for @tweet do |f| %>
    <%= f.label :content,"内容" %>
    <%= f.text_field :body %>
    <%= f.select :category, [["悩み", "trouble"], ["テクニック・アドバイス", "advice"]], include_blank: "どの投稿？" %>
    <%= f.submit "投稿する" %>
   <% end %>
+    
+</div>
+
+
 

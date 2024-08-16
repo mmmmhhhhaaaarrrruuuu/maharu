@@ -1,36 +1,37 @@
-<h1>GeekTwitter</h1>
-<h3>Tweet詳細</h3>
+<h1>Tweet詳細</h1>
+
 <div class="tweet">
+  
+  <h2>投稿内容</h2>
   <p><%= @tweet.body %></p>
   <p><%= @tweet.created_at %></p>
 
     <% if user_signed_in? %>
       <% if current_user.already_liked?(@tweet) %>
         <%= link_to tweet_like_path(@tweet), method: :delete do %>
-
-            <i class="fas fa-heart"></i><%= @tweet.likes.count %> 
-          
+            <i class="fas fa-heart"></i><%= @tweet.likes.count %>           
         <% end %>
-      <% else %>
-        <%= link_to tweet_likes_path(@tweet), method: :post do %>
-          
+     <% else %>
+        <%= link_to tweet_likes_path(@tweet), method: :post do %>          
             <i class="fas fa-heart"></i><%= @tweet.likes.count %>  
-
         <% end %>
-      <% end %>
+     <% end %>
     <% else %>
-    <i class="far fa-heart"></i><%= t.likes.count %>
+     <i class="far fa-heart"></i><%= t.likes.count %>
     <% end %>
+    
   <%= link_to "編集する", edit_tweet_path(@tweet.id) %>
+
+
+  <h2>いいねしたユーザー</h2>
+
+  <% @tweet.liked_users.each do |user| %>
+    <li><%= user.email %></li>
+  <% end %>
 </div>
 
-<h2>いいねしたユーザー</h2>
-<% @tweet.liked_users.each do |user| %>
-  <li><%= user.email %></li>
-<% end %>
-
 <div class="comment-wrapper">
-  <p>コメント一覧</p>
+  <h2>コメント一覧</h2>
   <% if @comments.any? %>
     <% @comments.each do |c| %>
       <div>
@@ -54,6 +55,7 @@
       <% end %>
     <% end %>
   <% end %>
-</div>
 
-<%= link_to "Tweet一覧に戻る", tweets_path %>
+
+  <%= link_to "Tweet一覧に戻る", tweets_path %>
+</div>

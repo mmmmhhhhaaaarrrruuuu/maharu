@@ -48,8 +48,25 @@ end
 def trouble
   @posts = Post.all
 end
+
 def top
 end
+
+def nomikai
+end
+
+def jousi
+end
+
+def date
+end
+
+def syotaimen
+end
+
+def kyoutsuu
+end
+
 
 private
   def tweet_params

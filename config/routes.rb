@@ -12,6 +12,11 @@ Rails.application.routes.draw do
   
   resources :users, only: [:show] # ユーザーマイページへのルーティング
 
+  get 'tweets/nomikai' => 'tweets#nomikai'
+  get 'tweets/jousi' => 'tweets#jousi'
+  get 'tweets/date' => 'tweets#date'
+  get 'tweets/syotaimen' => 'tweets#syotaimen'
+  get 'tweets/kyoutsuu' => 'tweets#kyoutsuu'
     resources :tweets do
     resources :likes, only: [:create, :destroy]
     resources :comments, only: [:create]
@@ -25,4 +30,6 @@ Rails.application.routes.draw do
   get 'posts/trouble' => 'posts#trouble'
   get 'posts/advice' => 'posts#advice'
   get 'tweets/top' => 'tweets#top'
+  
+  
 end

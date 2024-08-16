@@ -1,0 +1,16 @@
+.tweet-container{
+    background-color: oldlace;
+    margin: 40px;
+}
+.tweet-container h6 {
+    font-size: 40px;
+    color: blue;
+}
+.tweet-container img{
+    width: 450px;  
+    height: 300px;
+    margin: 40px;
+}
+.intoro p{
+    font-size: 30px;
+}

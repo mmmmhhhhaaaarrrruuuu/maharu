@@ -1,16 +1,45 @@
 .tweets-container {
-    width: 50%;
-    margin: 10px auto;
+    width: 90%;
+    margin: 30px auto;
+    font-size: 20px;
+  }
+  
+  h2{
+    font-size: 50px;
+    margin-left: 20px;
+    font-family: Comic Sans MS;
   }
   h3 {
     width: 100px;
     margin: 30px auto;
     text-align: center;
   }
+  .tweets-container h3 {
+    font-size: 30px;
+    width: 100px;
+  }
   .tweet {
-    border-top: solid #00acee;
+    border-top: solid yellowgreen;
     margin-top: 10px;
+    margin: 30px;
     padding-top: 20px;
+    font-size: 20px;
+  }
+  .tweet h2{
+    font-size: 30px;
+    border-bottom: solid yellowgreen;  
+    margin: 20px;  
+    width: 90%;
+  }
+  .comment-wrapper{
+    margin: 30px;
+    font-size: 20px;
+    
+  }
+  .comment-wrapper h2 {
+    font-size: 30px;
+    width: 90%;
+    border-bottom: solid yellowgreen;
   }
   .main-box {
     margin: 5px 0;
@@ -21,4 +50,39 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  .field h3 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  
+  .kuro {
+    font-size: 20px;
+    line-height: 150%;
+    margin: 15px;
+        
+  }
+  .kuro h2 {
+    margin: 20px;
+  }
+  
+  .hensyuu {
+    font-size: 30px;
+    margin: 40px; 
+  }
+    
+  .syasin img {
+    text-align: center;
+    margin-left: 25px;
+    background-color: burlywood;  
+    size: cover;
+  }
+  
+  .actions {
+    margin: 20px;
+    font-size: 20px;
+  }
+  
+  
+  
   

@@ -1,23 +1,24 @@
 /*   First block   */
 #first-block {
-    background-image: url("2-5-2-1.jpg");
+    background-image: url("450-20210827113628114816.jpg");
     background-size: cover;
     width: 100%;
     height: 550px;
-  
     display: flex;
-    
+
   }
   
   .title-container {
-    text-align: center;
+    text-align: left;
   }
   
   .title-container h1 {
     
-    font-size: 50px;
+    font-size: 80px;
     font-family: serif;
-    color: #444;
+    color: teal;
+    margin-left: 30px;
+    margin-top: 20px;
   }
   
   .title-container h3 {
@@ -43,7 +44,7 @@
   
   .slider img {
       width:100%;/*スライダー内の画像を横幅100%に*/
-      height:auto;
+      height:absolute;
   }
   
   /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
@@ -81,12 +82,12 @@
   
   .slick-dots {
       text-align:center;
-    margin:20px 0 0 0;
+      margin:20px 0 0 0;
   }
   
   .slick-dots li {
       display:inline-block;
-    margin:0 5px;
+      margin:0 5px;
   }
   
   .slick-dots button {
@@ -107,12 +108,13 @@
   /*========= レイアウトのためのCSS ===============*/
   
   body{
-    background:#eee;
+    background-image: url("haikei siro.jpg");
+    background-size: cover;
   }
   
   h2,p {
-      text-align:center;
-      padding:20px;
+    
+    padding:5px;
   }
   
   ul{
@@ -122,7 +124,7 @@
   }
   
   a{
-    color: #333;
+    color: black;
   }
   
   a:hover,
@@ -130,12 +132,56 @@
     text-decoration: none;
   }
     
-    index.html
-      <!--   First block Start   -->
-      <section id="first-block">
-        <div class="title-container">
-          <h1>会話のテクニックを紹介するサイト</h1>
-          <h3>~ Geeksalon Webコース1期生 ~</h3>
-        </div>
-      </section>
-      <!--   First block End   -->
+  #second-block {
+    background-image: haikei ssiro.png;
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 100px;
+    
+  }
+  
+  
+  
+  .info-text {
+    font-size: 50px;
+    margin-top: 5px;
+    color: black;
+    width: 30%;
+  }
+
+  .info-image{
+    width: 100px;
+    height: 50px;
+  }
+  
+  .font-small {
+    font-size: 30px;
+  }
+  .kanato {
+    margin-right: 100px;
+  }
+
+  .maharu {
+    border: 4px solid yellowgreen;
+    margin: 50px;
+  }
+  .maharu h2 {
+    font-size: 40px;
+    color: orange;
+  }
+  .maharu p{
+    font-size: 25px;
+  }
+
+
+
+  /*   Second block End   */
+
